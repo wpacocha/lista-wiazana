@@ -178,6 +178,7 @@ int main() {
         auto duration10 = duration_cast<nanoseconds>(stop10 - start10);
         cout << "Znalezienie ostatniego elementu zajęło: " << duration10.count() << " nanosekund."<<endl;
         cout<<endl<<endl;
+        list.~List();
     }
     return 0;
 }
